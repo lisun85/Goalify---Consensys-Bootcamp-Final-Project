@@ -63,4 +63,4 @@ This DAPP intends to use smart contract to reinforce behavior through programmab
 - Interact with the web interface
 
 ## ✅ Testing
-- You can run the tests by running `truffle test` from the CryptoFPL directory
+- You can run the tests by running `truffle test` from the Goalify main directory
