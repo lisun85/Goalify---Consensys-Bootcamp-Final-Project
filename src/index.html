@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+    <script>
+        if (typeof web3 !== 'undefined') {
+            web3 = new Web3(web3.currentProvider);
+        } else {
+            // set the provider you want from Web3.providers
+            web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:7545"));
+    }
+    </script>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Set Your Goal</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/untitled.css">
+</head>
+
+<body>
+    <header class="masthead text-white text-center" style="background:url('images/Nike.jpg')no-repeat center center;background-size:cover;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <h1 id="outputTopBanner" class="mb-5">Welcome to Goalify</h1>
+                </div>
+                <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                    <form>
+                        <div class="form-row align-self-center">
+                            <div class="col-12 col-md-9 mb-2 mb-md-0">
+                                <input id="goalName" class="form-control" type="text" placeholder="Name Your Goal (e.g. lose 10 lb) => be on MM Acc1....">
+                                <input id ="goalBetSize" class="form-control" type="text" placeholder="What's the minimum ur willing to bet on urself (Enter in Eth)...">
+                                <input id ="goalDuration" class="form-control" type="text" placeholder="How long do you need to achieve this goal (Enter in seconds)...">
+                                <p id="output"><strong></strong></p></div>
+                            <div
+                                class="col-12 col-md-3 align-self-center"><button id="setgoal" class="btn btn-primary btn-block btn-lg d-xl-flex justify-content-xl-center setgoal" type="submit">Set Goal!</button></div>
+                                
+                </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </header>
+    <section class="showcase"></section>
+    <section class="testimonials text-center bg-light">
+        
+        <div class="container">
+            <h2 class="mb-5">The Players...</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="images/You.jpg">
+                        <h5>Staker</h5>
+                    </div><input id="outputGoalCreation" type="text" placeholder = "This is You..."></div>
+                <div class="col-lg-4">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="images/Sponsor.jpg">
+                        <h5>Sponsor</h5>
+                            <input id="outputSponsor" type="text" placeholder="switch to MM Acc2..."><button id="setSponsor" class="btn btn-primary" type="button">SET</button>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto testimonial-item mb-5 mb-lg-0"><img class="rounded-circle img-fluid mb-3" src="images/Judge.jpg">
+                        <h5>Judge</h5>
+                    </div><input id="outputJudge" type="text" placeholder="switch to MM Acc3..."><button id="setJudge" class="btn btn-primary" type="button">SET</button></div>
+            </div>
+        </div>
+        <section class="features-icons bg-light text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                            <div class="d-flex features-icons-icon"><i class="icon-fire m-auto text-primary" data-bs-hover-animate="pulse"></i></div>
+                            <h3>Bet</h3>
+                            <p class="lead mb-0">Bet on yourself! <br>Enter Eth</p>
+                            </div>
+                                <input id="stakerBetInput" type="text" placeholder="enter in Eth..."><button id="betStaker" class="btn btn-primary" type="button">Bet</button></div>
+                    <div class="col-lg-4">
+                        <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                            <div class="d-flex features-icons-icon"><i class="icon-drop m-auto text-primary" data-bs-hover-animate="pulse"></i></div>
+                            <h3>Co-Bet</h3>
+                            <p class="lead mb-0">Co-Bet to support!<br>Enter Eth</p>
+                        </div>
+                                <input id="sponsorBetInput" type="text" placeholder="enter in Eth..."><button id="betSponsor" class="btn btn-primary" type="button">BET</button></div>
+                    <div class="col-lg-4">
+                        <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                            <div class="d-flex features-icons-icon"><i class="icon-like m-auto text-primary" data-bs-hover-animate="pulse"></i></div>
+                            <h3>Approve</h3>
+                            <p class="lead mb-0">Approve if <br>the goal is met!</p>
+                        </div><button id="approveJudge" class="btn btn-primary" type="button">YES</button><button id="rejectJudge" class="btn btn-primary" type="button">NO&nbsp;</button></div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="call-to-action text-white text-center" style="background:url(&quot;images/bg-masthead.jpg&quot;) no-repeat center center;background-size:cover;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <h2 class="mb-4">Click Claim to Withdraw</h2>
+                </div>
+                <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-12 col-md-9 mb-2 mb-md-0"><input class="form-control form-control-lg" type="email" placeholder="Staker, Sponsor, and Judge can claim..."></div>
+                            <div class="col-12 col-md-3"><button id="claim" class="btn btn-primary btn-block btn-lg2" type="submit">Claim Eth!</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bs-init.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+    <script src='js/bignumber.js'></script>
+
+    <!-- This exposes the library as a global variable: ethers -->
+    <script src="https://cdn.ethers.io/scripts/ethers-v3.min.js"
+        charset="utf-8"
+        type="text/javascript">
+    </script>
+
+
+</body>
+
+</html>

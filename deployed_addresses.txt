@@ -1,0 +1,47 @@
+Network - ropsten (ID #3)
+- Goalify: 0x6bA6eFc642c3E0314844F5A1265Ea5113db8823c
+
+Network - kovan (ID: #42)
+- Goalify: 0xC216A8FB25e46e17C082E836C70022e9e40C1EA8
+
+
+Ropsten Details
+-------------------------------------
+
+2_deploy_contracts.js
+=====================
+
+   Replacing 'Goalify'
+   -------------------
+   > transaction hash:    0xc1457b044d6abff545cef78b053e8008138f23fe0246d5df5f4a7a6a9c50d53f
+   > Blocks: 1            Seconds: 21
+   > contract address:    0x6bA6eFc642c3E0314844F5A1265Ea5113db8823c
+   > block number:        9172656
+   > block timestamp:     1606774465
+   > account:             0x2e50c3C5a422afE210E9AAaFfC6e0EB6eEA07FB2
+   > balance:             0.90624314
+   > gas used:            1869338 (0x1c861a)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.03738676 ETH
+
+
+Kovan Detail:
+-------------------------------------
+
+2_deploy_contracts.js
+=====================
+
+   Replacing 'Goalify'
+   -------------------
+   > transaction hash:    0xcc057435b104004a7dc0dbc7e66ec039ef1347305a9ba8c3328311de1f44ccd7
+   > Blocks: 1            Seconds: 5
+   > contract address:    0xC216A8FB25e46e17C082E836C70022e9e40C1EA8
+   > block number:        22362653
+   > block timestamp:     1606773008
+   > account:             0x2e50c3C5a422afE210E9AAaFfC6e0EB6eEA07FB2
+   > balance:             0.8809032
+   > gas used:            1869338 (0x1c861a)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.03738676 ETH

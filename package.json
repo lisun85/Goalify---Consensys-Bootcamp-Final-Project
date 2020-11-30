@@ -1,0 +1,23 @@
+{
+  "name": "pet-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@openzeppelin/test-helpers": "^0.5.9",
+    "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.2.0",
+    "bignumber.js": "^9.0.1"
+  }
+}
