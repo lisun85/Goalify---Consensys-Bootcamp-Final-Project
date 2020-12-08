@@ -1,4 +1,4 @@
-# 🚀 Goalify 
+# :star2: Goalify 
 
  Welcome to Goalify, the Dapp that allows you to bet on yourself to achieve your own goals. Goalify utilizes smart contracts on the Ethereum blockchain to enforce goal-getters (aka stakers) to put "their money where their mouth is" and hold you accountable for the goals they intend to achieve. 
  
